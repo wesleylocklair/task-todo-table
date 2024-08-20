@@ -11,6 +11,15 @@ body {
   margin: 0 auto;
 }
 
+.task-card.near-deadline {
+  background-color: yellow;
+}
+
+.task-card.overdue {
+  background-color: red;
+  color: white;
+}
+
 .task-card:hover {
   cursor: grab;
 }

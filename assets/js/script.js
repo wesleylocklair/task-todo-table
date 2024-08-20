@@ -136,6 +136,12 @@ function handleDrop(event, ui) {
     renderTaskList();
 }
 $(document).ready(function () {
+
+    taskDueDateInputEl.datepicker({
+        changeMonth: true,
+        changeYear: true,
+      });
+      
     renderTaskList();
     $(".lane").droppable({
       accept: ".draggable",
