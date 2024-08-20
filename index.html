@@ -20,11 +20,37 @@
     <h1 class="display-3">Task Board</h1>
     <p class="lead">A simple Kanban board for task management</p>
   </header>
+
   <div class="container">
     <div class="text-center mb-5">
       <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#formModal">Add Task</button>
     </div>
-    <!-- Todo: Create a modal with a form to add tasks -->
+
+    <!-- Modal -->
+    <div class="modal" id="formModal" >
+      <div class="modal-dialog">
+        <form id="task-form" class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Add Task</h4>
+            <button type="button" class="close" data-dismiss="modal" id="close"> &times; </button>
+          </div>
+    <div class="modal-body container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+      <div class="form-group">
+        <label for="task-name-input">Task Title</label>
+        <input id="task-name-input" type="text" class="form-control" placeholder="Task Title" aria-label="Task Title"/>
+      </div>
+    </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="task-due-date">Task Due Date</label>
+          <input placeholder="Task Due Date" autocomplete="off" type="text" class="form-control mb-3" id="task-due-date" />
+        </div>
+      </div>
+    </div>
+
+
     <div class="row swim-lanes text-center justify-content-between">
       <div class="col-12 col-lg-4 d-flex">
         <div id="to-do" class="card border-light mb-3 lane flex-grow-1">
@@ -36,6 +62,7 @@
           </div>
         </div>
       </div>
+
       <div class="col-12 col-lg-4 d-flex">
         <div id="in-progress" class="card border-light mb-3 lane flex-grow-1">
           <div class="card-header bg-white">
@@ -46,6 +73,7 @@
           </div>
         </div>
         </div>
+        
         <div class="col-12 col-lg-4 d-flex">
           <div id="done" class="card border-light mb-3 lane flex-grow-1">
             <div class="card-header bg-white">
