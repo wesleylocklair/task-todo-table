@@ -15,3 +15,6 @@ W3 Schools
 * Click on the add task button and input the fields!
 * This will create your task and you can drag to put it in its place!
 * You can press the delete button to take it off of the page!
+
+## Screenshots
+![Screenshot (17)](https://github.com/user-attachments/assets/aaf36791-c89d-4dd7-8079-765e2d11ed53)
